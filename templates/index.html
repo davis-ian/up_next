@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,15 @@
 </head>
 <body>
     <h1>Welcome to up next</h1>
-    
+
+    <div id="app">
+        <main>
+            <p>[[message]]</p>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src='{% static "js/site.js" %}'></script>
 </body>
 </html>
